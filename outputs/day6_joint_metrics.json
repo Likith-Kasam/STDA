@@ -1,0 +1,56 @@
+{
+  "day": 6,
+  "cramers_v_primary": 0.5347,
+  "cramers_v_p": 0.0,
+  "all_associations": [
+    {
+      "Spatial": "kmeans_cluster",
+      "Temporal": "kshape_temporal_cluster",
+      "CramersV": 0.5347,
+      "p_value": 0.0
+    },
+    {
+      "Spatial": "kmeans_cluster",
+      "Temporal": "dtw_temporal_cluster",
+      "CramersV": 0.544,
+      "p_value": 0.0
+    },
+    {
+      "Spatial": "dbscan_cluster",
+      "Temporal": "kshape_temporal_cluster",
+      "CramersV": 0.9999,
+      "p_value": 0.0
+    },
+    {
+      "Spatial": "dbscan_cluster",
+      "Temporal": "dtw_temporal_cluster",
+      "CramersV": 0.9999,
+      "p_value": 0.0
+    },
+    {
+      "Spatial": "hdbscan_cluster",
+      "Temporal": "kshape_temporal_cluster",
+      "CramersV": 0.9621,
+      "p_value": 0.0
+    },
+    {
+      "Spatial": "hdbscan_cluster",
+      "Temporal": "dtw_temporal_cluster",
+      "CramersV": 0.9724,
+      "p_value": 0.0
+    }
+  ],
+  "anova_severity_spatial": {
+    "F": 7986.5024,
+    "p": 0.0
+  },
+  "anova_severity_temporal": {
+    "F": 35.8588,
+    "p": 0.0
+  },
+  "predict_temporal_accuracy": 1.0,
+  "predict_temporal_f1_macro": 1.0,
+  "predict_spatial_accuracy": 0.9752,
+  "predict_spatial_f1_macro": 0.9729,
+  "st_anomalies": 6
+}
