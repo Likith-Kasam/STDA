@@ -1,0 +1,46 @@
+{
+  "day": 2,
+  "task": "Spatial ML",
+  "clustering": {
+    "kmeans": {
+      "best_k": 8,
+      "silhouette": 0.2901546709436138,
+      "davies_bouldin": 1.1493891996823273,
+      "calinski_harabasz": 49671.8455745234
+    },
+    "dbscan": {
+      "best_eps_km": 50.0,
+      "best_min_samples": 50,
+      "n_clusters": 46,
+      "noise_pct": 0.0,
+      "silhouette": 0.9935
+    },
+    "hdbscan": {
+      "best_min_cluster_size": 500,
+      "n_clusters": 139,
+      "noise_pct": 10.06,
+      "silhouette": 0.8613,
+      "davies_bouldin": 0.274
+    }
+  },
+  "hotspot_gstar": {
+    "target": "mean_severity",
+    "hot_99pct_cells": 0,
+    "cold_99pct_cells": 0,
+    "not_significant_cells": 48
+  },
+  "prediction": {
+    "gwr": {
+      "bandwidth": 49,
+      "global_R2": 0.4125,
+      "adj_R2": 0.3484,
+      "aicc": -47.14
+    },
+    "spatial_rf": {
+      "Train R\u00b2": 0.6337,
+      "Test R\u00b2": 0.6215,
+      "Test MAE": 0.3232,
+      "Test RMSE": 0.5493
+    }
+  }
+}
